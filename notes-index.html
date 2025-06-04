@@ -3,10 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <!-- Link to your CSS file -->
-     <link rel="stylesheet" href="style.css">
+    <title>Notes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #2a2a2a;
+            color: #888;
+            line-height: 1.8;
+            padding: 4rem 2rem;
+            font-size: 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #999;
+            margin-bottom: 3rem;
+            font-weight: 400;
+            font-size: 1.1rem;
+            text-align: right;
+        }
+
+        .year {
+            color: #999;
+            font-size: 1.1rem;
+            margin: 2rem 0 1rem 0;
+            font-weight: 400;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.3rem;
+        }
+
+        a {
+            color: #888;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.2rem 0;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .back {
+            margin-top: 3rem;
+        }
+
+        .back a {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .back a:hover {
+            color: #999;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>All Posts</h1>
+        
+        <div class="year">2024</div>
+        <ul>
+            <li><a href="notes/campusX/generativeAI Playlist/1. GenAI Roadmap.html">gen ai <span class="date">11-15</span></a></li>
+            <li><a href="react.html">React Components <span class="date">11-10</span></a></li>
+            <li><a href="css.html">CSS Grid & Flexbox <span class="date">11-05</span></a></li>
+            <li><a href="algorithms.html">Data Structures <span class="date">10-28</span></a></li>
+            <li><a href="nodejs.html">Node.js Basics <span class="date">10-20</span></a></li>
+        </ul>
+        
+        <div class="year">2023</div>
+        <ul>
+            <li><a href="html-basics.html">HTML Fundamentals <span class="date">12-15</span></a></li>
+            <li><a href="git.html">Git Commands <span class="date">11-22</span></a></li>
+        </ul>
+        
+        <div class="back">
+            <a href="../">← Back</a>
+        </div>
+    </div>
 </body>
 </html>
