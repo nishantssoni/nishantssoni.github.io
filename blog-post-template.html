@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Title | Nishant Soni</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for blog content readability */
+        .blog-content { margin-top: 2rem; font-size: 1.05rem; }
+        .blog-content p { margin-bottom: 1.5rem; }
+        .blog-content code { background: var(--code-bg); padding: 2px 5px; border-radius: 3px; font-family: 'Courier New', monospace; font-size: 0.9em; }
+        .back-link { font-family: 'Courier New', monospace; font-size: 0.9rem; margin-bottom: 2rem; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <button id="theme-toggle" aria-label="Toggle Dark Mode">
+        <span class="icon">☀&#xFE0E;</span>
+    </button>
+
+    <div class="container">
+        
+        <header class="header">
+            <a href="index.html" class="back-link">&larr; Back to Home</a>
+            <h1>Optimizing RAG Pipelines for Latency</h1>
+            <div class="subtitle">Oct 12, 2025 &middot; 5 min read</div>
+        </header>
+
+        <article class="blog-content">
+            <p>
+                Retrieval-Augmented Generation (RAG) is powerful, but latency can kill the user experience. 
+                In this post, I discuss how I optimized a vector search pipeline...
+            </p>
+
+            <h3>The Problem</h3>
+            <p>
+                When dealing with millions of vectors, a brute-force search is too slow. 
+                We initially saw latencies of <code>800ms</code> per query.
+            </p>
+
+            <h3>The Solution</h3>
+            <p>
+                We implemented HNSW (Hierarchical Navigable Small World) indexing. 
+                This reduced our search time to under <code>50ms</code>.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+                Balancing accuracy and speed is an art form in ML engineering.
+            </p>
+        </article>
+
+        <footer class="footer">
+            <p>&copy; 2025 Nishant Soni.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
